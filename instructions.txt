@@ -1,0 +1,27 @@
+
+*install*
+
+# run Anaconda prompt as administrator
+
+# create virtual environment within selected path
+conda create -p C:\[path]\<environment name>
+conda activate C:\[path]\<environment name>
+
+# install python version
+conda install python==X.XX
+
+# install required libraries
+cd C:\[path]\<repo name>
+pip install -r requirements.txt
+
+------------------------------------
+
+*uninstall*
+
+# run Anaconda prompt as administrator
+ 
+#check if corresponding virtual environment exists by listing environments
+conda info --envs
+
+# remove target environment
+conda remove -p C:\[path]\<environment name> --all

@@ -1,0 +1,64 @@
+\documentclass[a4paper,12pt,]{book}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{hyphenat} % hyphenation control 
+%\usepackage[none]{hyphenat} % hyphenation control
+\usepackage[english]{babel}
+\usepackage{blindtext} % blind text creation for testing
+\usepackage{microtype} % justification improvement across document
+\usepackage{graphicx} % document image insertion
+%\usepackage[allfiguresdraft]{draftfigure} % figures draft mode; comment line for rendered document version
+\usepackage{index} % automatically generated indexes
+\usepackage{subfiles} % multi-file project
+\usepackage{fancyhdr}
+\usepackage{textcomp} % straight quote through '\textquotesingle'
+\makeindex % index generation (must specify index content)
+
+\addto\captionsenglish{\renewcommand{\chaptername}{Book}}  % alter Chapter text
+\newcommand{\figsize}{11cm}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\begin{document}
+
+\title{ 
+\Huge{\textbf{Gustave Doré \protect\\ Divine comedy illustrations}} \\~\\
+\small{\uppercase{with accompanying excerpts \protect\\ from the original work (Italian) \protect\\ and the H. F. Cary translation (English)}}
+} % '\protect\\' breaks title line
+\author{C. M. Bélanger Nzakimuena}
+\date{2025} % '\date{December 21, 2018}' for custom date, \date{\today} for current day, \date{\the\year{}} for current year
+\maketitle
+
+\setlength\parindent{0pt} % in-document indentations removal
+\let\cleardoublepage\clearpage % blank pages removal
+
+\frontmatter
+\tableofcontents % automatic table of contents generation
+
+\chapter*{Notes}
+\addcontentsline{toc}{chapter}{Notes}
+Content is structured into books (hell, purgatory and heaven) according to the original work. Book subdivisions are outlined according to the cantos they encompass within the original work. For each illustration, the associated passage is provided in the Italian language from the original work, and in the English language from the H. F. Cary translation. Individual illustrations are designated by the corresponding canto in the original work. Each illustration designation is provided in the following format: \\~\\
+\tab\tab\tab\tab Canto XX(\textquotesingle image number\textquotesingle, if > 1)
+
+\mainmatter
+
+\chapter{Hell}
+\newpage
+\subfile{sections/book_1.tex}
+
+\chapter{Purgatory}
+\newpage
+\subfile{sections/book_2.tex}
+
+\chapter{Heaven}
+\newpage
+\subfile{sections/book_3.tex}
+
+\nocite{alighieri2009divine} % include reference in bibliography without citing within the text
+\nocite{alighieri1868commedia}
+\bibliographystyle{ieeetran}
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliography} % addition of bibliography to table of content
+\bibliography{References}
+
+\end{document}
