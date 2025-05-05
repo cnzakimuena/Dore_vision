@@ -101,7 +101,7 @@ class Document:
             sys.exit()
         # extract canto from illustration name
         canto_text = 'Canto ' + curr_image_name[6:]
-        # extract French text
+        # extract Italian text
         it_text = curr_df_row.iloc[0]['original_excerpt']
         # extract English text
         en_text = curr_df_row.iloc[0]['Cary_excerpt']
