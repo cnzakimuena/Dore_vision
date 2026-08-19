@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+pandas==2.1.2
+=======
+pandas==2.1.2
+pypdf==3.17.4
+pillow==10.0.0
+>>>>>>> 9f7c2d5 (Added output file compression.)
