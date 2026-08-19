@@ -1,5 +1,5 @@
 # Doré Vision
-Gustave Doré Divine Comedy illustrations with accompanying excerpts from the original work and the H. F. Cary English translation (1909). A script for automated generation of the anthology is provided.
+Gustave Doré Divine Comedy illustrations with accompanying excerpts from the original Italian work and the H. F. Cary English translation (1909). A script for automated generation of the anthology is provided.
 
 For automated generation, the repository should at minimum initially contain the following files in the structure shown below:
 
