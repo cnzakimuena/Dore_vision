@@ -1,5 +1,5 @@
 # Doré Vision
-Gustave Doré Divine Comedy illustrations with accompanying excerpts from the original Italian work and the H. F. Cary English translation (1909). A script for automated generation of the anthology is provided.
+Gustave Doré Divine Comedy illustrations with accompanying excerpts from the original Italian work (1868) and the H. F. Cary English translation (2009). A script for automated generation of the anthology is provided.
 
 For automated generation, the repository should at minimum initially contain the following files in the structure shown below:
 
@@ -34,5 +34,5 @@ python generator.py
 
 ### References
 
-1. Alighieri, D. (1966–1967). La Commedia secondo l'antica vulgata (G. Petrocchi, Ed.). Mondadori.
-1. Alighieri, D. (1909). The divine comedy (H. F. Cary, Trans.). P.F. Collier & Son.
+1. Alighieri, D. (1868). La commedia. Marco Visentini.
+1. Alighieri, D. (2009). The divine comedy (H. F. Cary, Trans.). Wordsworth Editions.
