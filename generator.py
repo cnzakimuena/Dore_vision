@@ -166,8 +166,6 @@ class Document:
                              + '"' + it_text + '"} ' + chr(92) + chr(92) + '\n'
                              + '—' + curr_image_name + ' ' + chr(92) + chr(92) + '~'
                              + chr(92) + chr(92) + '\n'
-                             + '—' + curr_image_name + ' ' + chr(92) + chr(92)
-                             + '~' + chr(92) + chr(92) + '\n'
                              + chr(92) + 'textit{"' + en_text + '"} ' + chr(92) + chr(92) + '\n'
                              + '—' + curr_df_row.iloc[0]['Cary_image'] + '\n'
                              + chr(92) + 'end{minipage}' + '\n'
