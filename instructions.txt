@@ -8,7 +8,7 @@ conda create -p C:\[path]\<environment name>
 conda activate C:\[path]\<environment name>
 
 # install python version
-conda install python==X.XX
+conda install python==3.12
 
 # install required libraries
 cd C:\[path]\<repo name>
