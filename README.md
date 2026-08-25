@@ -18,13 +18,20 @@ dore_vision/
 └── requirements.txt
 ```
 
-installation:
+Environment setup:
+
+```bash
+conda create -n myenv python=3.12
+conda activate myenv
+```
+
+Dependencies installation:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-usage:
+Usage:
 
 ```bash
 python generator.py
